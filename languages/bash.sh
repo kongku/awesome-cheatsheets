@@ -923,8 +923,10 @@ On_White='\033[47m' # White
 # Example of usage
 echo -e "${Green}This is GREEN text${Color_Off} and normal text"
 echo -e "${Red}${On_White}This is Red test on White background${Color_Off}" 
-# option -e is mandatory, it enable interpretation of backslash escapes
-printf "${Red} This is red \n"
+# option -e is mandatory, it enable interpretation of backslash escapes in centOS
+# ubuntu,debian don't need -e
+
+printf "${Red}This is red \n"
 
 
 ##############################################################################
